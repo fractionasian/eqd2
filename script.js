@@ -10,10 +10,8 @@ function calculateHighDose() {
     }
 
     const dosePerFraction = highDose / fractions;
-    const eqd2 = 0.5 * (
-        Math.sqrt(fractions) * Math.sqrt((alphaBeta ** 2 * fractions) + (4 * alphaBeta * highDose) + (8 * highDose))
-        - (fractions * alphaBeta)
-    );
+    const eqd2 = highDose * (((highDose / fractions) + alphaBeta) / (2 + alphaBeta))
+    ;
 
     document.getElementById('highDosePerFraction').textContent = dosePerFraction.toFixed(2);
     document.getElementById('highDoseResult').textContent = eqd2.toFixed(2);
@@ -31,10 +29,8 @@ function calculateIntermediateDose() {
     }
 
     const dosePerFraction = intermediateDose / fractions;
-    const eqd2 = 0.5 * (
-        Math.sqrt(fractions) * Math.sqrt((alphaBeta ** 2 * fractions) + (4 * alphaBeta * intermediateDose) + (8 * intermediateDose))
-        - (fractions * alphaBeta)
-    );
+    const eqd2 = intermediateDose * (((intermediateDose / fractions) + alphaBeta) / (2 + alphaBeta))
+    ;
 
     document.getElementById('intermediateDosePerFraction').textContent = dosePerFraction.toFixed(2);
     document.getElementById('intermediateDoseResult').textContent = eqd2.toFixed(2);
@@ -52,10 +48,8 @@ function calculateLowDose() {
     }
 
     const dosePerFraction = lowDose / fractions;
-    const eqd2 = 0.5 * (
-        Math.sqrt(fractions) * Math.sqrt((alphaBeta ** 2 * fractions) + (4 * alphaBeta * lowDose) + (8 * lowDose))
-        - (fractions * alphaBeta)
-    );
+    const eqd2 = lowDose * (((lowDose / fractions) + alphaBeta) / (2 + alphaBeta))
+    ;
 
     document.getElementById('lowDosePerFraction').textContent = dosePerFraction.toFixed(2);
     document.getElementById('lowDoseResult').textContent = eqd2.toFixed(2);
