@@ -1,0 +1,12 @@
+{
+    "short_name": "EQD2",
+    "name": "EQD2 Calculator",
+
+    "start_url": ".",
+    "display": "standalone",
+    "scope": "/",
+    "theme_color": "lightskyblue",
+
+    "description": "A webapp for calculating EQD2",
+
+  }
