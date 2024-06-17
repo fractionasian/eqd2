@@ -2,11 +2,10 @@
     "short_name": "EQD2",
     "name": "EQD2 Calculator",
 
-    "start_url": ".",
-    "display": "standalone",
+    "start_url": "https://fractionasian.github.io/eqd2/",
+    "display": "fullscreen",
     "scope": "/",
-    "theme_color": "lightskyblue",
 
-    "description": "A webapp for calculating EQD2",
+    "description": "A webapp for calculating EQD2.",
 
   }
